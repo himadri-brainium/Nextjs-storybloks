@@ -42,6 +42,7 @@ export async function getStaticProps({ params }) {
   };
 }
  
+
 export async function getStaticPaths() {
   const storyblokApi = getStoryblokApi();
   let { data } = await storyblokApi.get("cdn/links/" ,{
