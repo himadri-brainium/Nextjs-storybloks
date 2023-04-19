@@ -9,7 +9,7 @@ import {
 
 export default function Page({ story }) {
   story = useStoryblokState(story);
-  console.log(story, "+++++++");
+  // console.log(story, "+++++++");
   return (
     <div>
       <Head>
@@ -24,7 +24,7 @@ export default function Page({ story }) {
 }
 
 export async function getStaticProps({ params }) {
-  console.log(params.slug[0], "+++++++++++++++++++");
+  // console.log(params.slug[0], "+++++++++++++++++++");
   let slug = params?.slug[0] ? params?.slug[0] : "home";
 
   let sbParams = {

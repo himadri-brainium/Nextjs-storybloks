@@ -1,7 +1,8 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
-const Page = ({ blok }) => (
-  <main {...storyblokEditable(blok)} className="main-class">
+const Page = ({ blok }) => {
+  // console.log(blok,'+++++++')
+  return (<main {...storyblokEditable(blok)} className="main-class" style={{backgroundColor:`${blok.backgroundColor.color}`}}>
     <div className="container">
       <div className="row">
         <div className="col-md-12 text-center">
@@ -13,7 +14,7 @@ const Page = ({ blok }) => (
         </div>
       </div>
     </div>
-  </main>
-);
+  </main>)
+};
 
 export default Page;

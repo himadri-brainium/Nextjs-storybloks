@@ -1,8 +1,8 @@
 import { storyblokEditable } from "@storyblok/react";
  
 const NavigationHeader = ({ blok }) => {
-      console.log(blok.back_arrow.filename
-            ,"blok=====")
+      // console.log(blok.back_arrow.filename
+            // ,"blok=====")
   return (
   
 <div>
