@@ -27,7 +27,7 @@ export async function getStaticProps({ params }) {
   let slug = params.slug ? params.slug.join("/") : "home";
  
   let sbParams = {
-    version: "published", // or 'published'
+    version: "draft", // or 'published'
   };
  
   const storyblokApi = getStoryblokApi();
@@ -46,7 +46,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   const storyblokApi = getStoryblokApi();
   let { data } = await storyblokApi.get("cdn/links/" ,{
-    version: 'published'
+    version: 'draft'
   });
  
   let paths = [];
