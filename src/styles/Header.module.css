@@ -9,8 +9,9 @@
       display: flex;
       margin: 0 auto;
       width: auto;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
+      gap: 12px;
   }
   .headerback{
       font-weight: 400;

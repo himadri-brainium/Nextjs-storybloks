@@ -7,8 +7,8 @@ const Logo = ({blok}) => (
 //             {blok.name}
 //         {/* </a> */}
 //     </Link>
-<>
+<div className="logo">
 <img src={blok.logo}></img>
-</>
+</div>
 )
 export default Logo

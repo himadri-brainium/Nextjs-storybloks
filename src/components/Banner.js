@@ -7,8 +7,8 @@ const Banner = ({blok}) => (
 //             {blok.name}
 //         {/* </a> */}
 //     </Link>
-<>
+<div className="banner-class">
 <img src={blok.banner}></img>
-</>
+</div>
 )
 export default Banner
