@@ -2,7 +2,7 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
 const Page = ({ blok }) => {
   // console.log(blok,'+++++++')
-  return (<main {...storyblokEditable(blok)} className="main-class" style={{backgroundColor:`${blok.backgroundColor.color}`}}>
+  return (<main {...storyblokEditable(blok)} className="main-class" style={{backgroundColor:`${blok?.backgroundColor?.color}`}}>
     <div className="container">
       <div className="row">
         <div className="col-md-12 text-center">
